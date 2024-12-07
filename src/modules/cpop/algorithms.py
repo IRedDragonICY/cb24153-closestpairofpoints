@@ -1,7 +1,7 @@
 """
 algorithms.py
 
-This modules implements the closest pair of points algorithm using a
+These modules implement the closest pair of points algorithm using a
 divide-and-conquer approach, as well as a brute-force approach for small subsets.
 
 Key functions:

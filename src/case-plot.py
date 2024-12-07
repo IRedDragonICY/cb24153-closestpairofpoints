@@ -1,3 +1,9 @@
+"""
+case-plot.py
+This script demonstrates the use of the closest pair of points algorithm
+on a small dataset. It computes the closest pair distances for different
+colors of points and visualizes the points on a 2D plot.
+"""
 from typing import List
 
 from modules.cpop.algorithms import closest_pair_distance

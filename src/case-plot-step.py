@@ -1,3 +1,12 @@
+"""
+case-plot-step.py
+This script demonstrates the use of the closest pair of points algorithm
+on a small dataset. It computes the closest pair distances for different
+colors of points and visualizes the points on a 2D plot. It is a step-by-step
+version of the case-plot.py script, showing the process of computing the
+closest pair distances and visualizing the points.
+"""
+
 from typing import List
 
 from modules.cpopstep.algorithms import closest_pair_distance
