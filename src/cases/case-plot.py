@@ -50,8 +50,7 @@ def plot_points(points: List[ColoredPoint]) -> None:
     plt.show()
 
 if __name__ == "__main__":
-    # Sample data
-    data = [
+    raw_data = [
         ("green", 2, 3), ("green", 5, 1), ("green", 6, 2), ("green", 7, 7), ("green", 20, 24),
         ("black", 3, 5), ("black", 13, 14), ("black", 27, 25),
         ("purple", 9, 6), ("purple", 12, 10), ("purple", 17, 21), ("purple", 18, 15),
@@ -59,12 +58,13 @@ if __name__ == "__main__":
         ("red", 12, 30), ("red", 22, 29), ("red", 25, 18), ("red", 35, 40)
     ]
 
-    points = parse_data(data)
+    parsed_points = parse_data(raw_data)
     print("Computing distances by color:")
-    compute_closest_distances(points, by_color=True)
+    compute_closest_distances(parsed_points, by_color=True)
 
     print("\nComputing distances ignoring color:")
-    compute_closest_distances(points, by_color=False)
+    compute_closest_distances(parsed_points, by_color=False)
 
     print("\nVisualizing points:")
-    plot_points(points)
+    plot_points(parsed_points)
+

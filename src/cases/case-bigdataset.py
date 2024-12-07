@@ -96,5 +96,6 @@ def plot_performance(results_df):
 
 if __name__ == "__main__":
     dataset_sizes = [1000, 10000, 100000]
-    results_df = evaluate_performance(dataset_sizes)
-    plot_performance(results_df)
+    performance_results = evaluate_performance(dataset_sizes)
+    plot_performance(performance_results)
+
