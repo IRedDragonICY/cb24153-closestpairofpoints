@@ -23,7 +23,6 @@ An advanced and comprehensive implementation of the **Closest Pair of Points** p
 - [Real-World Applications](#real-world-applications)
 - [Critical Evaluation](#critical-evaluation)
 - [Conclusion](#conclusion)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
