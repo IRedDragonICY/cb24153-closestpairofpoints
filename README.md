@@ -268,7 +268,7 @@ python closest_pair.py --dataset datasets/points_100000.csv --method divide_conq
 ### Graphical Representation
 
 <p align="center">
-  <img src="./images/performance_comparison.png" alt="Performance Comparison">
+  <img src="./doc/images/performance_comparison.png" alt="Performance Comparison">
 </p>
 
 *The graph illustrates the execution time vs. number of points for both algorithms.*
