@@ -219,36 +219,31 @@ Ensure that **Python 3.x** is installed on your system.
 
 ### Running the Algorithm
 
-**Execute the main script:**
+To run the algorithm, you need to execute three Python scripts: `case-bigdataset.py`, `case-plot.py`, and `case-plot-step.py`. Follow the steps below to ensure everything runs smoothly:
 
-```bash
-python closest_pair.py
-```
+1. **Ensure Dependencies are Installed**
 
-**Command-Line Options:**
+   Make sure you have all the required dependencies installed. You can do this by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-- `--dataset`: Path to a custom dataset file.
-- `--method`: Algorithm choice (`'divide_conquer'` or `'brute_force'`).
+2. **Run the Scripts**
 
-**Example:**
+   Execute the scripts in the following order:
 
-```bash
-python closest_pair.py --dataset datasets/points_1000.csv --method divide_conquer
-```
+   ```bash
+   python src/case-bigdataset.py
+   python src/case-plot.py
+   python src/case-plot-step.py
+   ```
 
-### Testing with Large Datasets
+   Each script has a specific role:
+   - `case-bigdataset.py`: Evaluates the performance of the brute force and divide & conquer methods on larger datasets.
+   - `case-plot.py`: Plots the performance results of the algorithms.
+   - `case-plot-step.py`: Provides a step-by-step visualization of the algorithm's execution.
 
-**Generate a large dataset:**
-
-```bash
-python generate_dataset.py --num_points 100000 --output datasets/points_100000.csv
-```
-
-**Run the algorithm on the large dataset:**
-
-```bash
-python closest_pair.py --dataset datasets/points_100000.csv --method divide_conquer
-```
+By following these steps, you will be able to run the algorithm and visualize the results effectively.
 
 ## Performance Evaluation
 
