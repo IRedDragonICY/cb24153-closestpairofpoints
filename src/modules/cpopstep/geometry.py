@@ -1,3 +1,11 @@
+"""
+geometry.py
+
+These modules define the geometric data structures (Point and ColoredPoint)
+used in the closest pair of points problem. It keeps the focus on data
+representations and basic operations (like distance computation).
+"""
+
 import math
 
 class Point:
