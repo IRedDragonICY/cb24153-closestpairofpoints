@@ -1,3 +1,10 @@
+"""
+case-plot-step.py
+This script demonstrates the use of the closest pair of points algorithm
+on a small dataset. It generates a set of colored points, computes the
+closest pair distances, and visualizes the points on a 2D grid.
+"""
+
 import matplotlib.pyplot as plt
 from collections import defaultdict
 from typing import List, Tuple
