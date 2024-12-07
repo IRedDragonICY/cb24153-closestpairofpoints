@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 from collections import defaultdict
 from typing import List, Tuple
-from ..module.cpop.geometry import ColoredPoint
-from ..module.cpop.algorithms import closest_pair_distance
+from module.cpopstep.geometry import ColoredPoint
+from module.cpopstep.algorithms import closest_pair_distance
 
 def parse_data(data: List[Tuple[str, int, int]]) -> List[ColoredPoint]:
     """Converts raw data into a list of ColoredPoint objects."""

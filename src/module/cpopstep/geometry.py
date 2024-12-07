@@ -38,8 +38,8 @@ class ColoredPoint(Point):
         - x (float): The x-coordinate of the point.
         - y (float): The y-coordinate of the point.
         """
-        super().__init__(x, y)
         self.color = color
+        super().__init__(x, y)
         print(f"[ColoredPoint] Created {self}")
 
     def __repr__(self):
