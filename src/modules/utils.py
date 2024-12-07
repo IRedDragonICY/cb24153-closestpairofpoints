@@ -20,7 +20,7 @@ from typing import List, Tuple
 
 from matplotlib import pyplot as plt
 
-from cpop.geometry import ColoredPoint
+from .cpop.geometry import ColoredPoint
 
 def parse_data(data: List[Tuple[str, int, int]]) -> List[ColoredPoint]:
     """Converts raw data into a list of ColoredPoint objects."""
