@@ -11,8 +11,8 @@ import time
 import random
 import pandas as pd
 import matplotlib.pyplot as plt
-from module.cpop.geometry import Point
-from module.cpop.algorithms import brute_force, closest_pair_distance
+from modules.cpop.geometry import Point
+from modules.cpop.algorithms import brute_force, closest_pair_distance
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.expand_frame_repr', False)

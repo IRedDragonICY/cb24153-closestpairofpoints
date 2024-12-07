@@ -1,26 +1,9 @@
-"""
-case-plot.py
-This script demonstrates the use of the closest pair of points algorithm
-on a small dataset. It generates a set of colored points, computes the
-closest pair distances, and visualizes the points on a 2D grid.
-"""
+from typing import List
 
-import matplotlib.pyplot as plt
-from collections import defaultdict
-from typing import List, Tuple
-from module.cpop.geometry import ColoredPoint
-from module.cpop.algorithms import closest_pair_distance
+from modules.cpop.algorithms import closest_pair_distance
+from modules.cpop.geometry import ColoredPoint
+from modules.utils import parse_data, group_by_color, plot_points
 
-def parse_data(data: List[Tuple[str, int, int]]) -> List[ColoredPoint]:
-    """Converts raw data into a list of ColoredPoint objects."""
-    return [ColoredPoint(color, x, y) for color, x, y in data]
-
-def group_by_color(points: List[ColoredPoint]) -> defaultdict:
-    """Groups points by their color."""
-    groups = defaultdict(list)
-    for point in points:
-        groups[point.color].append(point)
-    return groups
 
 def compute_closest_distances(points: List[ColoredPoint], by_color: bool = True) -> None:
     """
@@ -36,25 +19,6 @@ def compute_closest_distances(points: List[ColoredPoint], by_color: bool = True)
     else:
         dist = closest_pair_distance(points)
         print(f"Closest pair distance (ignoring color): {dist}")
-
-def plot_points(points: List[ColoredPoint]) -> None:
-    """Visualizes the points on a 2D grid, colored by their assigned color."""
-    groups = group_by_color(points)
-    fig, ax = plt.subplots(figsize=(8, 8))
-    for color, pts in groups.items():
-        xs = [p.x for p in pts]
-        ys = [p.y for p in pts]
-        ax.scatter(xs, ys, c=color, s=30, edgecolors='black', linewidths=0.5, zorder=3)
-
-    ax.set_xlim(0, 64)
-    ax.set_ylim(0, 64)
-    ax.set_xticks(range(0, 61, 10), minor=False)
-    ax.set_yticks(range(0, 61, 10), minor=False)
-    ax.set_xticks(range(-4, 65, 2), minor=True)
-    ax.set_yticks(range(-4, 65, 2), minor=True)
-    ax.grid(which='major', color='black', linestyle='-', linewidth=1)
-    ax.grid(which='minor', color='grey', linestyle=':', linewidth=0.5)
-    plt.show()
 
 if __name__ == "__main__":
     raw_data = [
@@ -74,4 +38,3 @@ if __name__ == "__main__":
 
     print("\nVisualizing points:")
     plot_points(parsed_points)
-
