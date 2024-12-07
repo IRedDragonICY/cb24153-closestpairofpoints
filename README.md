@@ -38,13 +38,15 @@ This project implements the **Divide and Conquer** algorithm to address the Clos
 
 The **Closest Pair of Points** problem involves finding the pair of points with the minimum Euclidean distance between them within a set of points on a 2D plane.
 
+To fix the LaTeX rendering in your README.md file, you can use the syntax supported by GitHub. Here's the corrected section:
+
 #### Euclidean Distance Calculation
 
-For any two points \( P_1 (x_1, y_1) \) and \( P_2 (x_2, y_2) \), the Euclidean distance \( d \) is calculated as:
+For any two points $P_1 (x_1, y_1)$ and $P_2 (x_2, y_2)$, the Euclidean distance $d$ is calculated as:
 
-\[
+$$
 d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
-\]
+$$
 
 This formula measures the "straight line" distance between two points in Euclidean space.
 
@@ -125,7 +127,7 @@ points = [
 A visual representation of this dataset helps understand the spatial distribution of points across the plane.
 
 <p align="center">
-  <img src="./images/dataset_visualization.png" alt="Dataset Visualization">
+  <img src="./doc/images/dataset_visualization.png" alt="Dataset Visualization">
 </p>
 
 ## Algorithm Implementation
