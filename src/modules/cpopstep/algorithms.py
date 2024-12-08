@@ -13,7 +13,7 @@ def brute_force(points: List[Point]) -> float:
     Returns:
     - (float): The smallest distance between any pair of points.
     """
-    print("===================================================================================")
+    print("====================================================================================================")
     print("[brute_force] Brute forcing the closest pair in a small subset of points.")
     print("[brute_force] Points considered:")
     for p in points:
@@ -54,7 +54,7 @@ def strip_closest(strip: List[Point], d: float) -> float:
     Returns:
     - (float): The updated minimum distance found in the strip.
     """
-    print("===================================================================================")
+    print("====================================================================================================")
     print("[strip_closest] Checking the 'strip' area for possibly closer pairs.")
     print("[strip_closest] Current minimum distance:", d)
     print("[strip_closest] Points in strip before sorting by y:")
@@ -75,7 +75,7 @@ def strip_closest(strip: List[Point], d: float) -> float:
         for j in range(i+1, min(i+7, n)):
             vertical_distance = strip[j].y - strip[i].y
             if vertical_distance >= min_dist:
-                print("---------------------------------------------------------------------------------------------------")
+                print("----------------------------------------------------------------------------------------------------")
                 print(f"[strip_closest] For {strip[i]} and {strip[j]}, vertical distance {vertical_distance} >= {min_dist}.")
                 print("[strip_closest] No need to check further in this inner loop.")
                 break
@@ -106,7 +106,7 @@ def closest_pair_util(points: List[Point]) -> float:
     Returns:
     - (float): The smallest distance between any pair of points in the subset.
     """
-    print("===================================================================================")
+    print("====================================================================================================")
     print("[closest_pair_util] Divide and Conquer step")
     print("[closest_pair_util] Number of points:", len(points))
     print("[closest_pair_util] Points sorted by x (as given):")
@@ -172,7 +172,7 @@ def closest_pair_distance(points: List[Point]) -> float:
     Returns:
     - (float): The smallest distance between any pair of points.
     """
-    print("===================================================================================")
+    print("====================================================================================================")
     print("[closest_pair_distance] Initiating closest pair computation.")
     if not points or len(points) < 2:
         print("[closest_pair_distance] Not enough points provided. Returning inf.")
