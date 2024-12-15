@@ -6,6 +6,9 @@
   <img src="https://img.shields.io/badge/Version-1.0.0-yellow.svg">
 </p>
 
+> [!NOTE]
+> Example problem and solution based Dr. Dr. Mohm Azwan Bin Mohammad Hamza assignment Algorithm & Complexity
+
 An advanced and comprehensive implementation of the **Closest Pair of Points** problem using the **Divide and Conquer** algorithm in computational geometry. This project provides an in-depth exploration of efficient algorithms for solving proximity problems in a two-dimensional plane, focusing on optimizing performance for large-scale datasets.
 
 ## Table of Contents
