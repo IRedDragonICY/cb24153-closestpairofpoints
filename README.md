@@ -6,8 +6,10 @@
   <img src="https://img.shields.io/badge/Version-1.0.0-yellow.svg">
 </p>
 
-> [!NOTE]
-> Example problem and solution based Dr. Mohm Azwan Bin Mohammad Hamza assignment Algorithm & Complexity
+<img src="./doc/images/banner.jpg" alt="Closest Pair of Points Algorithm">
+
+> **Note:**
+> Example problem and solution based on Dr. Mohm Azwan Bin Mohammad Hamza's assignment "Algorithm & Complexity"
 
 An advanced and comprehensive implementation of the **Closest Pair of Points** problem using the **Divide and Conquer** algorithm in computational geometry. This project provides an in-depth exploration of efficient algorithms for solving proximity problems in a two-dimensional plane, focusing on optimizing performance for large-scale datasets.
 
@@ -32,15 +34,13 @@ An advanced and comprehensive implementation of the **Closest Pair of Points** p
 
 Computational geometry is a foundational field in computer science that deals with algorithms and data structures for solving geometric problems. One of the classic challenges in this domain is determining the **Closest Pair of Points** in a two-dimensional plane. Efficiently solving this problem is crucial for applications such as **GPS navigation systems**, **machine learning clustering algorithms**, **image processing**, **wireless network optimization**, and **robotics**.
 
-This project implements the **Divide and Conquer** algorithm to address the Closest Pair of Points problem effectively, reducing the time complexity from \( O(n^2) \) (as seen in the brute-force method) to \( O(n \log n) \). This optimization is significant when handling large datasets where performance is a critical factor.
+This project implements the **Divide and Conquer** algorithm to address the Closest Pair of Points problem effectively, reducing the time complexity from $O(n^2)$ (as seen in the brute-force method) to $O(n \log n)$. This optimization is significant when handling large datasets where performance is a critical factor.
 
 ## Problem Statement
 
 ### Closest Pair of Points Problem
 
 The **Closest Pair of Points** problem involves finding the pair of points with the minimum Euclidean distance between them within a set of points on a 2D plane.
-
-To fix the LaTeX rendering in your README.md file, you can use the syntax supported by GitHub. Here's the corrected section:
 
 #### Euclidean Distance Calculation
 
@@ -54,7 +54,7 @@ This formula measures the "straight line" distance between two points in Euclide
 
 ### Inefficiency of Brute-Force Approach
 
-The brute-force method compares every possible pair of points to find the minimum distance, resulting in a time complexity of \( O(n^2) \). This quadratic growth becomes computationally expensive and impractical for large datasets due to the substantial number of comparisons required.
+The brute-force method compares every possible pair of points to find the minimum distance, resulting in a time complexity of $O(n^2)$. This quadratic growth becomes computationally expensive and impractical for large datasets due to the substantial number of comparisons required.
 
 ## Case Study Questions
 
@@ -74,7 +74,7 @@ The brute-force method compares every possible pair of points to find the minimu
    - Step-by-step solution using the provided dataset.
 
 4. **Time Complexity Analysis**
-   - Comparison between \( O(n \log n) \) and \( O(n^2) \) time complexities.
+   - Comparison between $O(n \log n)$ and $O(n^2)$ time complexities.
 
 5. **Algorithm Implementation**
    - Code construction in Python.
@@ -145,20 +145,20 @@ The project is implemented in **Python**, utilizing its robust libraries and sim
 
 2. **Conquer**
 
-   - **Recursive Processing**: Recursively apply the algorithm to both halves to find the minimum distances \( d_L \) and \( d_R \).
+   - **Recursive Processing**: Recursively apply the algorithm to both halves to find the minimum distances $d_L$ and $d_R$.
    - **Base Case**: When subsets are small (typically 2 or 3 points), use the brute-force method.
 
 3. **Combine**
 
-   - **Find Minimal Distance**: Determine the minimal distance \( d = \min(d_L, d_R) \).
-   - **Strip Creation**: Build a strip of points within distance \( d \) from the central dividing line.
+   - **Find Minimal Distance**: Determine the minimal distance $d = \min(d_L, d_R)$.
+   - **Strip Creation**: Build a strip of points within distance $d$ from the central dividing line.
    - **Strip Optimization**: Sort the strip points based on y-coordinates and check for closer pairs.
 
 #### Strip Optimization
 
 - **Purpose**: Efficiently find the closest pair across the partition.
 - **Implementation**:
-  - **Create Strip**: Collect points that lie within distance \( d \) of the dividing line.
+  - **Create Strip**: Collect points that lie within distance $d$ of the dividing line.
   - **Sort Strip**: Sort these points based on their y-coordinates.
   - **Compare Points**: For each point in the strip, compare it with the next seven points to find the closest pair.
 
@@ -173,21 +173,21 @@ A detailed step-by-step solution for the provided dataset is available in the [`
 
 ## Time Complexity Analysis
 
-### Divide and Conquer Algorithm (\( O(n \log n) \))
+### Divide and Conquer Algorithm ($O(n \log n)$)
 
-- **Initial Sorting**: Takes \( O(n \log n) \) time.
-- **Recursive Division**: Creates \( \log n \) levels of recursion.
-- **Combine Step**: At each level, the strip processing takes \( O(n) \) time.
-- **Overall Complexity**: The combination of sorting and recursive steps results in \( O(n \log n) \) time complexity.
+- **Initial Sorting**: Takes $O(n \log n)$ time.
+- **Recursive Division**: Creates $\log n$ levels of recursion.
+- **Combine Step**: At each level, the strip processing takes $O(n)$ time.
+- **Overall Complexity**: The combination of sorting and recursive steps results in $O(n \log n)$ time complexity.
 
-### Brute-Force Method (\( O(n^2) \))
+### Brute-Force Method ($O(n^2)$)
 
 - **Pairwise Comparison**: Every pair of points is compared.
-- **Total Comparisons**: \( \frac{n(n - 1)}{2} \) comparisons, leading to quadratic time growth.
+- **Total Comparisons**: $\frac{n(n - 1)}{2}$ comparisons, leading to quadratic time growth.
 
 ### Comparative Analysis
 
-The Divide and Conquer method substantially outperforms the brute-force approach for large \( n \), as it reduces the number of necessary comparisons and scales logarithmically.
+The Divide and Conquer method substantially outperforms the brute-force approach for large $n$, as it reduces the number of necessary comparisons and scales logarithmically.
 
 ## Usage
 
@@ -226,14 +226,11 @@ To run the algorithm, you need to execute three Python scripts: `case-bigdataset
 
 1. **Ensure Dependencies are Installed**
 
-   Make sure you have all the required dependencies installed. You can do this by running:
    ```bash
    pip install -r requirements.txt
    ```
 
 2. **Run the Scripts**
-
-   Execute the scripts in the following order:
 
    ```bash
    python src/case-bigdataset.py
@@ -254,9 +251,9 @@ By following these steps, you will be able to run the algorithm and visualize th
 
 | Number of Points | Brute Force Distance | Brute Force Time (s) | Divide & Conquer Distance | Divide & Conquer Time (s) |
 |------------------|----------------------|----------------------|---------------------------|---------------------------|
-| 1,000            | 952.135495           | 0.178031             | 952.135495                | 0.003254                  |
-| 10,000           | 30.413813            | 14.760878            | 30.413813                 | 0.031042                  |
-| 100,000          | 11.401754            | 1465.536086          | 11.401754                 | 0.475594                  |
+| 1,000            | 952.135495          | 0.178031             | 952.135495                | 0.003254                  |
+| 10,000           | 30.413813           | 14.760878            | 30.413813                 | 0.031042                  |
+| 100,000          | 11.401754           | 1465.536086          | 11.401754                 | 0.475594                  |
 
 ### Observations
 
@@ -275,51 +272,46 @@ By following these steps, you will be able to run the algorithm and visualize th
 ## Real-World Applications
 
 1. **GPS Navigation Systems**
-
-   - **Nearest Neighbor Search**: Finding the closest service location (e.g., gas stations, hospitals) to the user's current position.
+   - **Nearest Neighbor Search**: Finding the closest service location.
    - **Route Optimization**: Calculating the shortest path by evaluating proximity between waypoints.
 
 2. **Machine Learning Clustering**
-
    - **Data Analysis**: Grouping similar data points for pattern recognition.
    - **Anomaly Detection**: Identifying outliers based on distance metrics.
 
 3. **Image Processing**
-
    - **Feature Matching**: Aligning images by matching key points.
    - **Object Recognition**: Detecting and classifying objects within images.
 
 4. **Wireless Network Optimization**
-
-   - **Network Design**: Placing transmitters to ensure optimal coverage while minimizing interference.
-   - **Signal Strength Mapping**: Analyzing proximity to access points for connectivity improvements.
+   - **Network Design**: Placing transmitters for optimal coverage.
+   - **Signal Strength Mapping**: Analyzing proximity to access points.
 
 5. **Robotics**
-
-   - **Obstacle Avoidance**: Real-time detection of nearby obstacles for safe navigation.
-   - **Path Planning**: Determining efficient movement paths by calculating distances to targets and hazards.
+   - **Obstacle Avoidance**: Real-time detection of nearby obstacles.
+   - **Path Planning**: Determining efficient paths to targets.
 
 ## Critical Evaluation
 
 ### Strengths
 
-- **High Efficiency**: The algorithm significantly reduces computation time for large datasets.
-- **Wide Applicability**: Useful across multiple domains that require proximity calculations.
-- **Foundational Knowledge**: Enhances understanding of advanced computational geometry techniques.
+- **High Efficiency**: Significantly reduces computation time for large datasets.
+- **Wide Applicability**: Useful in various domains requiring proximity calculations.
+- **Foundational Knowledge**: Enhances understanding of computational geometry techniques.
 
 ### Limitations
 
-- **Algorithm Complexity**: More complex to implement correctly compared to the brute-force method.
-- **Dimensionality**: The efficiency benefits decrease in higher-dimensional spaces where data points have more than two coordinates.
+- **Algorithm Complexity**: More complex to implement compared to the brute-force method.
+- **Dimensionality**: Efficiency gains diminish in higher-dimensional spaces.
 
 ### Potential Trade-Offs
 
-- **Development Time**: Increased implementation complexity may require more time for coding and debugging.
-- **Memory Usage**: Recursive function calls and additional data structures may consume more memory resources.
+- **Development Time**: More time needed for coding and debugging.
+- **Memory Usage**: Increased memory usage due to recursion and additional data structures.
 
 ## Conclusion
 
-The **Divide and Conquer** algorithm offers a powerful and efficient solution to the Closest Pair of Points problem, especially when dealing with large datasets. Its implementation in this project demonstrates significant performance improvements over the brute-force method, making it highly suitable for real-world applications that demand quick and reliable proximity calculations.
+The **Divide and Conquer** algorithm offers a powerful and efficient solution to the Closest Pair of Points problem, especially for large datasets. Its implementation in this project demonstrates significant performance improvements over the brute-force method, making it highly suitable for real-world applications that demand quick and reliable proximity calculations.
 
 ## License
 
