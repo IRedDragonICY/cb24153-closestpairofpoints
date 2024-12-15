@@ -164,7 +164,7 @@ The project is implemented in **Python**, utilizing its robust libraries and sim
 
 ## Step-by-Step Solution
 
-A detailed step-by-step solution for the provided dataset is available in the [`/doc/step_by_step_solution.md`](./doc/step_by_step_solution.md). It includes:
+A detailed step-by-step solution for the provided dataset is available in the [`/doc`](./doc). It includes:
 
 - **Sorting Points**: Demonstrates the initial sorting by x and y coordinates.
 - **Dividing Dataset**: Explains how the dataset is recursively partitioned.
