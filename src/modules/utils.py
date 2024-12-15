@@ -1,18 +1,7 @@
 """
-algorithms.py
-
-These modules implement the closest pair of points algorithm using a
-divide-and-conquer approach, as well as a brute-force approach for small subsets.
-
-Key functions:
-- brute_force(points): O(n^2) approach, used for small subsets.
-- closest_pair_distance(points): O(n log n) divide and conquer solution.
-
-The divide-and-conquer solution:
-1. Sort points by x-coordinate.
-2. Recursively find the closest pairs in the left and right subsets.
-3. Combine results and check the "strip" (points close to the dividing line)
-   to find if there's a closer pair that straddles the two subsets.
+utils.py
+This module contains utility functions for parsing data, grouping points by color,
+and visualizing points on a 2D grid.
 """
 
 from collections import defaultdict

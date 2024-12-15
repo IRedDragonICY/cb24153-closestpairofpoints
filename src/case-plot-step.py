@@ -39,11 +39,11 @@ if __name__ == "__main__":
     ]
 
     parsed_points = parse_data(raw_data)
-    print("Computing distances by color:")
-    compute_closest_distances(parsed_points, by_color=True)
+    # print("Computing distances by color:")
+    # compute_closest_distances(parsed_points, by_color=True)
 
-    # print("\nComputing distances ignoring color:")
-    # compute_closest_distances(parsed_points, by_color=False)
+    print("\nComputing distances ignoring color:")
+    compute_closest_distances(parsed_points, by_color=False)
 
     print("\nVisualizing points:")
     plot_points(parsed_points)

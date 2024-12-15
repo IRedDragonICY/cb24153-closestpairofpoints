@@ -69,10 +69,10 @@ def dist(a: Point, b: Point) -> float:
     print(f"[dist] Calculating distance between points {a} and {b}:")
     dx = a.x - b.x
     dy = a.y - b.y
-    print(f"[dist] dx = {a.x} - {b.x} = {dx}")
-    print(f"[dist] dy = {a.y} - {b.y} = {dy}")
+    print(f"[dist] δx = {a.x} - {b.x} = {dx}")
+    print(f"[dist] δy = {a.y} - {b.y} = {dy}")
     d_squared = dx**2 + dy**2
-    print(f"[dist] d_squared = {dx}^2 + {dy}^2 = {d_squared}")
+    print(f"[dist] δ_squared = ({dx})^2 + ({dy})^2 = {d_squared}")
     d = math.sqrt(d_squared)
-    print(f"[dist] d = sqrt({d_squared}) = {d}")
+    print(f"[dist] δ = sqrt({d_squared}) = {d}")
     return d
